@@ -1,1 +1,12 @@
 dev
+build
+node_modules
+
+FTP-files
+
+wp/*
+!wp/wp-content/
+wp/wp-content/*
+!wp/wp-content/themes/
+wp/wp-content/themes/*
+!wp/wp-content/themes/mainTheme/
