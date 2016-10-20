@@ -1,0 +1,74 @@
+/* Espace P
+*
+* /sass/components/_form.scss - Esthetic style for articles
+*
+* coded by Mucht!
+*/
+
+.form{
+    font-size: 2rem;
+    &__fieldset{
+        position: relative;
+    }
+    &__label{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0.3em 0 0.4em 0.5em;
+        display: inline-block;
+        &--textarea{
+            bottom: auto;
+            top: 0;
+        }
+    }
+    &__input{
+        background-color: transparent;
+        font-family: $josefinStack;
+        padding: 0.6em 1em 0.4em 13.095238095%;
+        font-size: 1.8rem;
+        border-top: none;
+        border-right: none;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid $formBorderColor;
+        &:focus{
+            border-left: 2px solid $formBorderColor;
+        }
+    }
+    &__textarea{
+        background-color: transparent;
+        padding: 3rem 1em 0.4em 0.6em;
+        display: block;
+        resize: vertical;
+        font-family: $josefinStack;
+        font-size: 1.8rem;
+        border-top: none;
+        border-right: none;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid $formBorderColor;
+        &:focus{
+            border-left: 2px solid $formBorderColor;
+        }
+    }
+    &__checkbox{
+        background-color: transparent;
+        border: 1px solid $checkBorderColor;
+        cursor: pointer;
+    }
+    &__checkboxLegend{
+        font-size: 1.6rem;
+        padding-bottom: 2.5rem;
+        cursor: pointer;
+    }
+    &__submit{
+        padding: 0.6em 0.5em 0.4em 0.5em;
+        font-size: 2.4rem;
+        font-family: $josefinStack;
+        background-color: $submitBrg;
+        border: none;
+        display: block;
+        cursor:pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/* Espace P
+*
+* /sass/components/_footer.scss - Esthetic style for footer
+*
+* coded by Mucht!
+*/
+
+.footer{
+    padding: 5rem 0 5rem;
+    border-top: 3px solid $footerLine;
+    &__col{
+        float: left;
+    }
+    &__listElt{
+        padding: 0.5em;
+    }
+    &__listLink{
+        display: block;
+        font-size: 2rem;
+        color: $textColor;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__social{
+        float: right;
+    }
+    &__copy{
+        display: block;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    &__copyLink{
+        color: $textColor;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

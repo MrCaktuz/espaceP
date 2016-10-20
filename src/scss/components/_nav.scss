@@ -1,0 +1,68 @@
+/* Espace P
+ *
+ * /sass/components/_nav.scss - Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+
+.mainNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: $navBrg;
+    &__list{
+        text-align: center;
+    }
+    &__listElt{
+        display: inline-block;
+        font-size: 2rem;
+        &--active{
+            text-decoration: underline;
+        }
+    }
+    &__listLink{
+        display: block;
+        padding: 2.5rem;
+        color: $navColor;
+        text-decoration: none;
+        transition: 0.1s ease-in-out;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.secondNav{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    min-width: 14.0625%;
+    z-index: 1000;
+    display: inline-block;
+    float: right;
+    position: sticky;
+    top: 70px;
+    right: 0;
+    background-color: $secondNavBcg;
+    padding: 0 1em;
+    &__intern{
+        padding-bottom: 1em;
+    }
+    &__extern{
+        padding-bottom: 1em;
+        border-top: 1px solid $secondNavBorder;
+    }
+    &__elt{
+
+    }
+    &__link{
+        display: block;
+        font-size: 1.8rem;
+        padding-top: 1em;
+        text-decoration: none;
+        color: $secondNavColor;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/* Espace P
+*
+* /sass/objects/_footer.scss - Non Esthetic style for footer elements
+*
+* coded by Mucht!
+*/
+.footer{
+    width: 82.8125%;
+    margin: 5rem auto 0;
+    &__nav{
+        margin-bottom: 2.5rem;
+    }
+    &__list{
+        width: 31.132075472%; // 330px/1060px
+    }
+    &__social{
+        width: 37.735849057%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,26 @@
+/* Espace P
+*
+* /sass/objects/_support.scss - Non Esthetic style for support
+*
+* coded by Mucht!
+*/
+
+.details{
+    width: 31.25%;
+    margin: 2.5rem 0 2.5rem 8.59375%;
+}
+
+.formSection{
+    width: 48.4375%;
+    margin: 1.8rem 8.59375% 0 0;
+}
+
+.support{
+    & p.support__intro, & p.support__whatYouGet{
+        max-width: 100%;
+        margin: 0;
+    }
+    &__price{
+        margin: 2.5rem 0 5rem 0;
+    }
+}

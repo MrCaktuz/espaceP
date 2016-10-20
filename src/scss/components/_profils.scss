@@ -1,0 +1,27 @@
+/* Espace P
+ *
+ * /sass/components/_profils.scss - Esthetic style for profils
+ *
+ * coded by Mucht!
+ */
+
+.profils{
+    float: right;
+    &__img{
+        &--tds{
+            background-image: url( #{ $imgPath }tds.jpg );
+        }
+        &--sw{
+            background-image: url( #{ $imgPath }sw.jpg );
+        }
+        &--clt{
+            background-image: url( #{ $imgPath }clt.jpg );
+        }
+        &--std{
+            background-image: url( #{ $imgPath }std.jpg );
+        }
+        &--cur{
+            background-image: url( #{ $imgPath }cur.jpg );
+        }
+    }
+}

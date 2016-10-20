@@ -1,0 +1,30 @@
+/* Espace P
+*
+* /sass/objects/_form.scss - Non Esthetic style for form
+*
+* coded by Mucht!
+*/
+
+.form{
+    &--contact{
+        width: 65.625%;
+        margin: 2.5rem auto 0 auto;
+    }
+    &--antenne{
+        width: 100%;
+    }
+    &__fieldset{
+        margin-bottom: 2.5rem;
+    }
+    &__label{
+    }
+    &__input{
+        width: 100%;
+    }
+    &__textarea{
+        width: 100%;
+    }
+    &__submit{
+        width: 100%;
+    }
+}

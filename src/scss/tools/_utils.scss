@@ -1,0 +1,32 @@
+/* Espace P
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Mucht
+ */
+
+// Grid
+// html{
+//     background-image: url(#{ $imgPath }grid.png);
+//     background-repeat: repeat-y;
+//     background-position: center;
+//     background-size: contain;
+// }
+// body{
+//     opacity: 0.5;
+// }
+
+// Other
+.hidden{
+    font-size: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.clear::after{
+    content: " ";
+    display: table;
+    clear: both;
+}

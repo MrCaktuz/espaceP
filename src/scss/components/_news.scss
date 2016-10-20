@@ -1,0 +1,41 @@
+/* Espace P
+ *
+ * /sass/components/_news.scss - Esthetic style for news
+ *
+ * coded by Mucht!
+ */
+
+.news{
+    &__title{
+        font-size: 2.5rem;
+        color: $titleColor;
+        text-align: center;
+        background-color: $titleBcg;
+        padding: 0.6em 0 0.4em;
+    }
+    &__content{
+        font-family: $cardoStack;
+        font-size: 1.6rem;
+        line-height: 1.7;
+        padding: 1em;
+        border: 3px solid $borderColor;
+    }
+}
+
+.social{
+    display: block;
+    text-align: center;
+    padding: 1em;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $socialColor;
+    background-color: $socialBcg;
+    &::before{
+        content: "    ";
+        font-size: 2.4rem;
+        font-family: $glyphs;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}

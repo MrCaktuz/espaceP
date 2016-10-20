@@ -1,0 +1,73 @@
+/* Espace P
+*
+* /sass/components/_antenne.scss - Esthetic style for antenne
+*
+* coded by Mucht!
+*/
+
+.about{
+    width: 39.84375%;
+    margin: 5rem 0 0 8.59375%;
+    float: left;
+}
+
+.team{
+    &__list{
+        font-size: 1.8rem;
+        padding-bottom: 5rem;
+    }
+    &__member{
+        padding: 0.5em;
+        color: $memberColor;
+    }
+    &__function{
+        font-size: 1.6rem;
+        display: block;
+        padding: 0.2em 0 0 1em;
+        color: $functionColor;
+    }
+}
+
+.schedule{
+    &__list{
+        font-size: 1.8rem;
+        padding-bottom: 5rem;
+    }
+    &__day{
+        padding: 0.5em;
+        color: $memberColor;
+    }
+    &__time{
+        font-size: 1.6rem;
+        text-align: right;
+        padding: 0.2em 0 0 1em;
+        color: $functionColor;
+    }
+}
+
+.address{
+    & p.address__line{
+        margin: 0;
+        margin-left: 1em;
+    }
+}
+
+.contact{
+    width: 39.84375%;
+    margin: 5rem 8.59375% 0 0;
+    float: right;
+}
+
+.antenne{
+    &__title{
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.map{
+    margin-top: 5rem;
+    &__link{
+        width: 100%;
+    }
+}

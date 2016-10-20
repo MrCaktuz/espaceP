@@ -1,0 +1,28 @@
+/* Espace P
+ *
+ * /sass/components/_support.scss - Esthetic style for support
+ *
+ * coded by Mucht!
+ */
+
+.details{
+    float: left;
+    font-family: $cardoStack;
+}
+
+.formSection{
+    float: right;
+}
+
+.support{
+    & p.support__intro{
+        font-size: 2.4rem;
+    }
+    &__price{
+        display: block;
+        font-size: 5rem;
+        color: $priceColor;
+        text-align: center;
+        background-color: $priceBrg;
+    }
+}

@@ -1,0 +1,46 @@
+/* Espace P
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+
+.header{
+    position: relative;
+    background-image: url( #{ $imgPath }espaceP1.jpg );
+    background-size: cover;
+    background-position: center bottom;
+    &__filter{
+        display: block;
+        padding-top: 8rem;
+        background-color: $filterColor;
+    }
+    &__titleBloc{
+        text-align: center;
+        padding: 0 8.59375%;
+    }
+    &__logoLink{
+        display: inline-block;
+    }
+    &__title{
+        position: relative;
+        display: inline-block;
+        padding-top: 10rem;
+        vertical-align: top;
+        text-align: left;
+        font-size: 5rem;
+        color: $titleColor;
+    }
+    &__subTitle{
+        padding-top: 4rem;
+        text-indent: -10rem;
+        font-size: 2rem;
+    }
+    &__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}

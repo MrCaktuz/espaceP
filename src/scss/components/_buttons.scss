@@ -1,0 +1,64 @@
+/* Espace P
+ *
+ * /sass/components/_contact.scss - Esthetic style for contact
+ *
+ * coded by Mucht!
+ */
+
+.buttons{
+    float: right;
+    &__title{
+        text-align: center;
+        font-size: 4rem;
+    }
+    &__img{
+        display: block;
+        float: left;
+        &--antenne{
+            background-image: url( #{ $imgPath }contact.jpg );
+        }
+        &--partner{
+            background-image: url( #{ $imgPath }partner.jpg );
+        }
+    }
+}
+
+.pageButtonImg{
+    display: block;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.pageButton{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    // height: 15rem;
+    font-size: 4rem;
+    padding: 5.5rem 5rem;
+    color: $pagebuttonColor;
+    background-color: $filterColor;
+    transition: 0.1s ease-in-out;
+    &:hover, &:focus{
+        background-color: $filterColorHover;
+        text-decoration: underline;
+    }
+}
+
+.links{
+    &__img{
+        &--legislation{
+            background-image: url( #{ $imgPath }legislation.jpg );
+        }
+        &--vac{
+            background-image: url( #{ $imgPath }vac.jpg );
+        }
+        &--info{
+            background-image: url( #{ $imgPath }info.jpg );
+        }
+    }
+    &__link{
+
+    }
+}
