@@ -6,13 +6,18 @@
 */
 
 .news{
+    width: 31.25%;
     margin-top: 5rem;
+    margin-left: 8.59375%;
     &__article{
-        width: 31.25%;
-        margin: 0 0 5rem 8.59375%;
+        margin-bottom: 5rem;
     }
-    &__social{
-        width: 31.25%;
-        margin-left: 8.59375%;
+}
+
+//===== media query =====
+@media screen and (max-width: 760px) {
+    .news{
+        margin: 5rem auto 2.5rem;
+        width: 65.625%;
     }
 }

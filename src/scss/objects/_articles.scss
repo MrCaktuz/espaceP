@@ -7,18 +7,28 @@
 
 .content{
     &__title{
-        margin: 5rem 0 0 0;
+        margin: 5rem 8.59375% 0 0;
     }
     &__subTitle{
         margin: 2.5rem 0 0 8.59375%;
     }
     & p{
         margin: 2.5rem 0 0 8.59375%;
-        max-width: 57.03125%;
+        width: 57.03125%;
     }
 }
 
 .legislation{
     width: 65.625%;
     margin: 5rem auto 0 auto;
+}
+
+// ===== media query =====
+@media screen and (max-width: 600px) {
+    .content{
+        & p {
+            margin: 2.5rem auto 2.5rem;
+            width: 65.625%;
+        }
+    }
 }

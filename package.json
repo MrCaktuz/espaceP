@@ -28,5 +28,8 @@
     "gulp-preprocess": "^2.0.0",
     "gulp-sass": "^2.3.2",
     "gulp-size": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^3.1.1"
   }
 }

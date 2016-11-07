@@ -18,3 +18,31 @@
         margin: 0;
     }
 }
+
+// ===== media query =====
+@media screen and (max-width: 600px) {
+    .footer{
+        &__nav{
+            margin-bottom: 2.5rem;
+        }
+        &__list{
+            width: 48.113207547%;
+            &:first-of-type{
+                margin-right: 3.773584906%;
+            }
+        }
+        &__social{
+            width: 100%;
+            margin: 20.5rem auto 2.5rem;
+        }
+    }
+}
+
+// ===== media query =====
+@media screen and (max-width: 390px) {
+    .footer{
+        &__social{
+            margin-top: 23.5rem;
+        }
+    }
+}

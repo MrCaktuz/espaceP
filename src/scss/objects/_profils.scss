@@ -10,6 +10,17 @@
     margin-right: 8.59375%;
     margin-bottom: 5rem;
     &__img{
-        margin-top: 5rem;
+        margin-top: 2.5rem;
+        &:first-of-type{
+            margin-top: 5rem;
+        }
+    }
+}
+
+// ===== media query =====
+@media screen and (max-width: 760px) {
+    .profils{
+        margin: 0 auto 2.5rem;
+        width: 65.625%;
     }
 }

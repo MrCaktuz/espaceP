@@ -1,0 +1,1028 @@
+@charset "UTF-8";
+/* => Nom du site
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mucht
+ */
+/* Espace P
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Mucht
+ */
+/* Espace P
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ */
+/* Espace P
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Mucht
+ */
+@font-face {
+  font-family: 'cardo';
+  src: url("../fonts/cardo/cardo-bold-webfont.woff2") format("woff2"), url("../fonts/cardo/cardo-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cardo';
+  src: url("../fonts/cardo/cardo-italic-webfont.woff2") format("woff2"), url("../fonts/cardo/cardo-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'cardo';
+  src: url("../fonts/cardo/cardo-regular-webfont.woff2") format("woff2"), url("../fonts/cardo/cardo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'josefin';
+  src: url("../fonts/josefinsans/josefinsans-bold-webfont.woff2") format("woff2"), url("../fonts/josefinsans/josefinsans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'josefin';
+  src: url("../fonts/josefinsans/josefinsans-italic-webfont.woff2") format("woff2"), url("../fonts/josefinsans/josefinsans-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'josefin';
+  src: url("../fonts/josefinsans/josefinsans-regular-webfont.woff2") format("woff2"), url("../fonts/josefinsans/josefinsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Espace P
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Mucht
+ */
+/* Espace P
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Mucht
+ */
+.hidden {
+  font-size: 0; }
+
+.clear {
+  clear: both; }
+
+.clear::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* => Nom du site
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Mucht
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* => Nom du site
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Mucht
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Espace P...
+  *
+  * /sass/base/_root.scss - Base styles for root element
+  *
+  * coded by Mathieu Claessens
+  */
+html {
+  font-size: 10px;
+  font-family: "Josefin sans", "Raleway", "Lucida Grande", Helvetica, sans-serif;
+  color: #7c3247; }
+
+/* Espace P
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header elements
+ *
+ * coded by Mucht!
+ */
+.header__textBloc {
+  width: 100%; }
+
+.header__logoLink {
+  margin-right: 4rem; }
+
+.header__nav {
+  width: 100%; }
+
+@media screen and (max-width: 900px) {
+  .header__logo {
+    width: 150px;
+    margin-top: 1rem; } }
+
+/* Espace P
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header elements
+ *
+ * coded by Mucht!
+ */
+.mainNav {
+  width: 100%; }
+  .mainNav__label {
+    width: 50px;
+    height: 50px; }
+    .mainNav__label::before {
+      width: 50px;
+      height: 50px; }
+
+.secondNav {
+  margin-top: 5rem;
+  min-width: 14.0625%; }
+  .secondNav__label {
+    width: 50px;
+    height: 50px; }
+    .secondNav__label::before {
+      width: 50px;
+      height: 50px; }
+
+@media screen and (max-width: 760px) {
+  .mainNav {
+    width: auto; }
+    .mainNav__list {
+      max-width: 0; }
+    .mainNav__input:checked ~ .mainNav__list {
+      max-width: 190px; }
+    .mainNav__input:checked ~ .mainNav__label::before {
+      width: 190px; }
+  .secondNav {
+    width: auto;
+    margin-top: 0; }
+    .secondNav__list {
+      max-width: 0; }
+    .secondNav__input:checked ~ .secondNav__list {
+      max-width: 190px; }
+    .secondNav__input:checked ~ .secondNav__label::before {
+      width: 190px; } }
+
+/* Espace P
+*
+* /sass/objects/_profils.scss - Non Esthetic style for profils elements
+*
+* coded by Mucht!
+*/
+.profils {
+  width: 48.4375%;
+  margin-right: 8.59375%;
+  margin-bottom: 5rem; }
+  .profils__img {
+    margin-top: 2.5rem; }
+    .profils__img:first-of-type {
+      margin-top: 5rem; }
+
+@media screen and (max-width: 760px) {
+  .profils {
+    margin: 0 auto 2.5rem;
+    width: 65.625%; } }
+
+/* Espace P
+*
+* /sass/objects/_news.scss - Non Esthetic style for news
+*
+* coded by Mucht!
+*/
+.news {
+  width: 31.25%;
+  margin-top: 5rem;
+  margin-left: 8.59375%; }
+  .news__article {
+    margin-bottom: 5rem; }
+
+@media screen and (max-width: 760px) {
+  .news {
+    margin: 5rem auto 2.5rem;
+    width: 65.625%; } }
+
+/* Espace P
+*
+* /sass/objects/_footer.scss - Non Esthetic style for footer elements
+*
+* coded by Mucht!
+*/
+.footer {
+  width: 82.8125%;
+  margin: 5rem auto 0; }
+  .footer__nav {
+    margin-bottom: 2.5rem; }
+  .footer__list {
+    width: 31.132075472%; }
+  .footer__social {
+    width: 37.735849057%;
+    margin: 0; }
+
+@media screen and (max-width: 600px) {
+  .footer__nav {
+    margin-bottom: 2.5rem; }
+  .footer__list {
+    width: 48.113207547%; }
+    .footer__list:first-of-type {
+      margin-right: 3.773584906%; }
+  .footer__social {
+    width: 100%;
+    margin: 20.5rem auto 2.5rem; } }
+
+@media screen and (max-width: 390px) {
+  .footer__social {
+    margin-top: 23.5rem; } }
+
+/* Espace P
+*
+* /sass/objects/_articles.scss - Non Esthetic style for articles
+*
+* coded by Mucht!
+*/
+.content__title {
+  margin: 5rem 8.59375% 0 0; }
+
+.content__subTitle {
+  margin: 2.5rem 0 0 8.59375%; }
+
+.content p {
+  margin: 2.5rem 0 0 8.59375%;
+  width: 57.03125%; }
+
+.legislation {
+  width: 65.625%;
+  margin: 5rem auto 0 auto; }
+
+@media screen and (max-width: 600px) {
+  .content p {
+    margin: 2.5rem auto 2.5rem;
+    width: 65.625%; } }
+
+/* Espace P
+*
+* /sass/objects/_contact.scss - Non Esthetic style for contact
+*
+* coded by Mucht!
+*/
+.buttons {
+  margin: 5rem 5.46875%; }
+  .buttons__img {
+    width: 44.736842105%;
+    margin: 2.5rem 0 0 3.50877193%; }
+
+.links__title {
+  margin-bottom: 2.5rem; }
+
+.links__img {
+  width: 65.625%;
+  margin: 0 auto 2.5rem auto; }
+
+@media screen and (max-width: 760px) {
+  .buttons__img--antenne {
+    width: 100%;
+    margin-left: 0; }
+  .buttons__img--partner {
+    width: 100%;
+    margin-left: 0; } }
+
+/* Espace P
+*
+* /sass/objects/_form.scss - Non Esthetic style for form
+*
+* coded by Mucht!
+*/
+.form--contact {
+  width: 65.625%;
+  margin: 2.5rem auto 0 auto; }
+
+.form--antenne {
+  width: 100%; }
+
+.form__fieldset {
+  margin-bottom: 2.5rem; }
+
+.form__input {
+  width: 100%; }
+
+.form__textarea {
+  width: 100%; }
+
+.form__submit {
+  width: 100%; }
+
+.screen-reader-response {
+  margin: 0 0 2.5rem 0.5em; }
+
+/* Espace P
+*
+* /sass/objects/_support.scss - Non Esthetic style for support
+*
+* coded by Mucht!
+*/
+.details {
+  width: 31.25%;
+  margin: 2.5rem 0 2.5rem 8.59375%; }
+
+.formSection {
+  width: 48.4375%;
+  margin: 1.8rem 8.59375% 0 0; }
+
+.support p.support__intro, .support p.support__whatYouGet {
+  width: 100%;
+  margin: 0; }
+
+.support__price {
+  margin: 2.5rem 0 5rem 0; }
+
+@media screen and (max-width: 760px) {
+  .details, .formSection {
+    margin: 2.5rem auto;
+    width: 65.625%; } }
+
+/* Espace P
+*
+* /sass/objects/_antenne.scss - Non Esthetic style for antenne
+*
+* coded by Mucht!
+*/
+.about {
+  width: 39.84375%;
+  margin: 5rem 0 0 8.59375%; }
+
+.findUs p.address__line {
+  margin: 0;
+  margin-left: 1.4em; }
+  .findUs p.address__line:first-of-type {
+    margin-left: 0; }
+
+.findUs p.findUs__phone {
+  margin: 1em 0; }
+
+.findUs a.findUs__mail {
+  margin-left: 0; }
+
+.contact {
+  width: 39.84375%;
+  margin: 5rem 8.59375% 0 0; }
+
+.antenne__title {
+  margin-bottom: 2.5rem; }
+
+.map {
+  margin-top: 5rem; }
+  .map__link {
+    width: 100%; }
+    .map__link img {
+      width: 100%; }
+
+@media screen and (max-width: 600px) {
+  .about {
+    margin: 5rem auto 0; }
+  .contact {
+    margin: 2.5rem auto;
+    width: 65.625%; }
+  .findUs p {
+    width: auto; } }
+
+/* Espace P
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mucht!
+ */
+.header {
+  position: relative;
+  background-image: url(../images/headerBrg.jpg);
+  background-size: cover;
+  background-position: center bottom; }
+  .header__filter {
+    display: block;
+    padding-top: 8rem;
+    background-color: rgba(124, 50, 71, 0.75); }
+  .header__titleBloc {
+    text-align: center;
+    padding: auto 8.59375%;
+    padding-bottom: 5rem; }
+  .header__logoLink {
+    display: inline-block; }
+  .header__title {
+    position: relative;
+    display: inline-block;
+    padding-top: 10rem;
+    vertical-align: top;
+    text-align: center;
+    font-size: 5rem;
+    color: #FFF; }
+  .header__subTitle {
+    padding-top: 4rem;
+    text-indent: -10rem;
+    font-size: 2rem; }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8); }
+
+@media screen and (max-width: 900px) {
+  .header__title {
+    font-size: 4rem; } }
+
+@media screen and (max-width: 760px) {
+  .header__filter {
+    padding-top: 5rem; } }
+
+@media screen and (max-width: 600px) {
+  .header__filter {
+    padding: 7.5rem 8.59375% 0; }
+  .header__title {
+    padding-top: 0; }
+  .header__logoLink {
+    display: none; }
+  .header__subTitle {
+    text-indent: 0; } }
+
+@media screen and (max-width: 350px) {
+  .header__title {
+    text-align: center; }
+  .header__logoLink {
+    display: none; }
+  .header__subTitle {
+    text-indent: 0; } }
+
+/* Espace P
+ *
+ * /sass/components/_nav.scss - Esthetic style for navigation
+ *
+ * coded by Mucht!
+ */
+.mainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .mainNav__list {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .mainNav__listElt {
+    display: inline-block;
+    font-size: 2rem; }
+    .mainNav__listElt--active {
+      text-decoration: underline; }
+  .mainNav__listLink {
+    display: block;
+    padding: 2.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: 0.1s ease-in-out; }
+    .mainNav__listLink:hover {
+      text-decoration: underline; }
+  .mainNav__label {
+    display: block;
+    color: transparent; }
+  .mainNav__label::before {
+    content: "";
+    font-size: 35px;
+    font-family: "Glyphs";
+    color: #000;
+    display: block;
+    padding: 0.25em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer; }
+  .mainNav__input, .mainNav__label {
+    display: none; }
+
+.secondNav {
+  font-size: 1.8rem;
+  z-index: 1000;
+  display: inline-block;
+  float: right;
+  position: fixed;
+  position: sticky;
+  top: 70px;
+  right: 0; }
+  .secondNav__list {
+    background-color: #437179;
+    padding: 0 1em;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25); }
+  .secondNav__intern {
+    padding-bottom: 1em; }
+  .secondNav__extern {
+    padding-bottom: 1em;
+    border-top: 1px solid #000; }
+  .secondNav__link {
+    display: block;
+    font-size: 1.8rem;
+    padding-top: 1em;
+    text-decoration: none;
+    color: #FFF; }
+    .secondNav__link:hover {
+      text-decoration: underline; }
+  .secondNav__label {
+    display: block;
+    color: transparent; }
+    .secondNav__label::before {
+      content: "";
+      font-size: 3.5rem;
+      font-family: "Glyphs";
+      color: #FFF;
+      display: block;
+      padding: 0.25em;
+      transition: 0.2s ease-in-out;
+      cursor: pointer; }
+  .secondNav__input, .secondNav__label {
+    display: none; }
+
+@media screen and (max-width: 900px) {
+  .mainNav__listElt {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 760px) {
+  .mainNav {
+    display: inline; }
+    .mainNav__list {
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25); }
+    .mainNav__listLink {
+      padding: 1em 2.5rem; }
+    .mainNav__listElt {
+      display: block; }
+    .mainNav__input {
+      position: absolute;
+      left: -100%; }
+    .mainNav__label {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      top: 0;
+      z-index: 2000; }
+    .mainNav__input:checked ~ .mainNav__list {
+      padding: 3.5rem 0.5em 0.5em 0.5em; }
+    .mainNav__input:checked ~ .mainNav__label {
+      box-shadow: none; }
+      .mainNav__input:checked ~ .mainNav__label::before {
+        content: ""; }
+  .secondNav {
+    display: inline;
+    position: fixed;
+    top: 0;
+    right: 0; }
+    .secondNav__list {
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25); }
+    .secondNav__intern {
+      padding-top: 3.5rem; }
+    .secondNav__listElt {
+      display: block; }
+    .secondNav__input {
+      position: absolute;
+      right: -100%; }
+    .secondNav__label {
+      display: block;
+      background-color: #437179;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2000; }
+    .secondNav__input:checked ~ .secondNav__list {
+      padding: 0.5em 1em; }
+    .secondNav__input:checked ~ .secondNav__label {
+      box-shadow: none; }
+      .secondNav__input:checked ~ .secondNav__label::before {
+        content: ""; } }
+
+/* Espace P
+ *
+ * /sass/components/_profils.scss - Esthetic style for profils
+ *
+ * coded by Mucht!
+ */
+.profils {
+  float: right; }
+  .profils__img--tds {
+    background-image: url(../images/tds.jpg); }
+  .profils__img--sw {
+    background-image: url(../images/sw.jpg); }
+  .profils__img--clt {
+    background-image: url(../images/clt.jpg); }
+  .profils__img--std {
+    background-image: url(../images/std.jpg); }
+  .profils__img--cur {
+    background-image: url(../images/cur.jpg); }
+
+@media screen and (max-width: 760px) {
+  .profils {
+    float: none; } }
+
+/* Espace P
+ *
+ * /sass/components/_news.scss - Esthetic style for news
+ *
+ * coded by Mucht!
+ */
+.news__title {
+  font-size: 2.5rem;
+  color: #FFF;
+  text-align: center;
+  background-color: #7c3247;
+  padding: 0.6em 0 0.4em; }
+
+.news__subTitle {
+  font-size: 2rem;
+  padding-bottom: 1em; }
+
+.news__content {
+  font-family: "Cardo", serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 1em;
+  border: 3px solid #7c3247; }
+
+.social {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #7c3247; }
+  .social::before {
+    content: "    ";
+    font-size: 2.4rem;
+    font-family: "Glyphs"; }
+  .social:hover {
+    text-decoration: underline; }
+
+/* Espace P
+*
+* /sass/components/_footer.scss - Esthetic style for footer
+*
+* coded by Mucht!
+*/
+.footer {
+  padding: 5rem 0 5rem;
+  border-top: 3px solid #437179; }
+  .footer__col {
+    float: left; }
+  .footer__listElt {
+    padding: 0.5em; }
+  .footer__listLink {
+    display: block;
+    font-size: 2rem;
+    color: #7c3247;
+    text-decoration: none; }
+    .footer__listLink:hover {
+      text-decoration: underline; }
+  .footer__social {
+    float: right; }
+  .footer__copy {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem; }
+  .footer__copyLink {
+    color: #7c3247;
+    text-decoration: none; }
+    .footer__copyLink:hover {
+      text-decoration: underline; }
+
+@media screen and (max-width: 600px) {
+  .footer__col {
+    float: none; }
+  .footer__list {
+    float: left; } }
+
+@media screen and (max-width: 500px) {
+  .footer__listLink {
+    font-size: 1.8rem; } }
+
+/* Espace P
+*
+* /sass/components/_articles.scss - Esthetic style for articles
+*
+* coded by Mucht!
+*/
+.content__title {
+  display: inline-block;
+  font-size: 3rem;
+  padding: 0 0.3em 0.1em 8.59375%;
+  border-bottom: 2px solid #437179; }
+
+.content__subTitle {
+  font-size: 2.5rem; }
+
+.content p {
+  font-size: 1.8rem;
+  line-height: 1.7; }
+
+.legislation {
+  background-image: url(../images/legislation.jpg); }
+
+/* Espace P
+ *
+ * /sass/components/_contact.scss - Esthetic style for contact
+ *
+ * coded by Mucht!
+ */
+.buttons {
+  float: right; }
+  .buttons__title {
+    text-align: center;
+    font-size: 4rem; }
+  .buttons__img {
+    display: block;
+    float: left; }
+    .buttons__img--antenne {
+      background-image: url(../images/contact.jpg); }
+    .buttons__img--partner {
+      background-image: url(../images/partner.jpg); }
+
+.pageButtonImg {
+  display: block;
+  background-size: cover;
+  background-position: center bottom; }
+
+.pageButton {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 4rem;
+  padding: 1.375em 1.25em;
+  color: #FFF;
+  background-color: rgba(124, 50, 71, 0.75);
+  transition: 0.1s ease-in-out; }
+  .pageButton:hover, .pageButton:focus {
+    background-color: rgba(67, 113, 121, 0.75);
+    text-decoration: underline; }
+
+.links__img--legislation {
+  background-image: url(../images/legislation.jpg); }
+
+.links__img--vac {
+  background-image: url(../images/vac.jpg); }
+
+.links__img--info {
+  background-image: url(../images/info.jpg); }
+
+@media screen and (max-width: 760px) {
+  .pageButton {
+    font-size: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .pageButton {
+    font-size: 2rem; }
+  .buttons__link {
+    font-size: 3rem; } }
+
+/* Espace P
+*
+* /sass/components/_form.scss - Esthetic style for articles
+*
+* coded by Mucht!
+*/
+.form {
+  font-size: 2rem; }
+  .form__fieldset {
+    position: relative;
+    border-bottom: 2px solid #437179; }
+    .form__fieldset--noBorder {
+      border: none; }
+  .form__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.6em 0 0 0.5em;
+    display: inline-block; }
+    .form__label--textarea {
+      bottom: auto;
+      top: 0; }
+  .form__input {
+    background-color: transparent;
+    font-family: "Josefin sans", "Raleway", "Lucida Grande", Helvetica, sans-serif;
+    padding: 0.6em 1em 0.4em 8rem;
+    font-size: 1.8rem;
+    border: none; }
+    .form__input:focus .form__fieldset {
+      border-left: 2px solid #437179; }
+  .form__textarea {
+    background-color: transparent;
+    padding: 3rem 1em 0.4em 0.6em;
+    display: block;
+    resize: vertical;
+    font-family: "Josefin sans", "Raleway", "Lucida Grande", Helvetica, sans-serif;
+    font-size: 1.8rem;
+    border: none; }
+    .form__textarea:focus {
+      border-left: 2px solid #437179; }
+  .form__checkbox {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: 1px solid #7c3247;
+    cursor: pointer; }
+  .form__checkboxLegend {
+    display: block;
+    font-size: 1.6rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2em;
+    cursor: pointer; }
+  .form__submit {
+    padding: 0.6em 0.5em 0.4em 0.5em;
+    font-size: 2.4rem;
+    font-family: "Josefin sans", "Raleway", "Lucida Grande", Helvetica, sans-serif;
+    background-color: #437179;
+    color: #FFF;
+    border: none;
+    display: block;
+    cursor: pointer; }
+    .form__submit:hover {
+      text-decoration: underline; }
+
+.screen-reader-response {
+  font-size: 1.8rem;
+  color: #FF0000; }
+  .screen-reader-response ul {
+    font-size: 0rem; }
+
+.wpcf7-validation-errors {
+  color: #FF0000; }
+
+.wpcf7-not-valid-tip {
+  position: relative;
+  left: 0.5em;
+  bottom: 0.2em;
+  font-size: 1.8rem;
+  color: #FF0000; }
+
+/* Espace P
+ *
+ * /sass/components/_support.scss - Esthetic style for support
+ *
+ * coded by Mucht!
+ */
+.details {
+  float: left;
+  font-family: "Cardo", serif; }
+
+.formSection {
+  float: right; }
+
+.support p.support__intro {
+  font-size: 2.4rem; }
+
+.support__price {
+  display: block;
+  font-size: 5rem;
+  color: #FFF;
+  text-align: center;
+  background-color: #7c3247; }
+
+@media screen and (max-width: 760px) {
+  .details {
+    float: none; }
+  .formSection {
+    float: none; } }
+
+/* Espace P
+*
+* /sass/components/_antenne.scss - Esthetic style for antenne
+*
+* coded by Mucht!
+*/
+.about {
+  float: left; }
+
+.team__list {
+  font-size: 1.8rem;
+  padding-bottom: 5rem; }
+
+.team__member {
+  padding: 0.5em;
+  color: #7c3247; }
+
+.team__function {
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.2em 0 0 1em;
+  color: #000; }
+
+.schedule__list {
+  font-size: 1.8rem;
+  padding-bottom: 5rem; }
+
+.schedule__day {
+  padding: 0.5em;
+  color: #7c3247; }
+
+.schedule__time {
+  font-size: 1.6rem;
+  padding: 0.2em 0 0 1em;
+  color: #000; }
+
+.findUs p.address__line:first-of-type::before {
+  content: "";
+  font-family: "Glyphs";
+  padding-right: 0.8em; }
+
+.findUs p.findUs__phone::before {
+  content: "";
+  font-family: "Glyphs";
+  padding-right: 0.5em; }
+
+.findUs a.findUs__mail {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #7c3247;
+  text-decoration: none; }
+  .findUs a.findUs__mail::before {
+    content: "";
+    font-family: "Glyphs";
+    padding-right: 0.4em; }
+
+.contact {
+  float: right; }
+
+.antenne__title {
+  font-size: 3rem; }
+
+@media screen and (max-width: 600px) {
+  .antenne {
+    text-align: center; }
+  .about {
+    float: none;
+    display: inline-block; }
+  .contact {
+    float: none; }
+  .findUs, .schedule, .team {
+    text-align: left; } }

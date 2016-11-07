@@ -6,8 +6,6 @@
 */
 
 .about{
-    width: 39.84375%;
-    margin: 5rem 0 0 8.59375%;
     float: left;
 }
 
@@ -39,35 +37,64 @@
     }
     &__time{
         font-size: 1.6rem;
-        text-align: right;
         padding: 0.2em 0 0 1em;
         color: $functionColor;
     }
 }
 
-.address{
+.findUs{
     & p.address__line{
-        margin: 0;
-        margin-left: 1em;
+        &:first-of-type{
+            &::before{
+                content: "";
+                font-family: $glyphs;
+                padding-right: 0.8em;
+            }
+        }
+    }
+    & p.findUs__phone{
+        &::before{
+            content: "";
+            font-family: $glyphs;
+            padding-right: 0.5em;
+        }
+    }
+    & a.findUs__mail{
+        font-size: 1.8rem;
+        line-height: 1.7;
+        color: $textColor;
+        text-decoration: none;
+        &::before{
+            content: "";
+            font-family: $glyphs;
+            padding-right: 0.4em;
+        }
     }
 }
 
 .contact{
-    width: 39.84375%;
-    margin: 5rem 8.59375% 0 0;
     float: right;
 }
 
 .antenne{
     &__title{
         font-size: 3rem;
-        margin-bottom: 2.5rem;
     }
 }
 
-.map{
-    margin-top: 5rem;
-    &__link{
-        width: 100%;
+// ===== media query =====
+@media screen and (max-width: 600px) {
+    .antenne{
+        text-align: center;
+    }
+    .about{
+        float: none;
+        display: inline-block;
+    }
+    .contact{
+        float: none;
+    }
+    .findUs, .schedule, .team{
+        text-align: left;
     }
 }

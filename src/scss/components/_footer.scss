@@ -39,3 +39,23 @@
         }
     }
 }
+
+// ===== media query =====
+@media screen and (max-width: 600px) {
+    .footer{
+        &__col{
+            float: none;
+        }
+        &__list{
+            float: left;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer{
+        &__listLink{
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -9,12 +9,16 @@
     font-size: 2rem;
     &__fieldset{
         position: relative;
+        border-bottom: 2px solid $formBorderColor;
+        &--noBorder{
+            border: none;
+        }
     }
     &__label{
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
-        padding: 0.3em 0 0.4em 0.5em;
+        padding: 0.6em 0 0 0.5em;
         display: inline-block;
         &--textarea{
             bottom: auto;
@@ -24,13 +28,10 @@
     &__input{
         background-color: transparent;
         font-family: $josefinStack;
-        padding: 0.6em 1em 0.4em 13.095238095%;
+        padding: 0.6em 1em 0.4em 8rem;
         font-size: 1.8rem;
-        border-top: none;
-        border-right: none;
-        border-left: 2px solid transparent;
-        border-bottom: 2px solid $formBorderColor;
-        &:focus{
+        border: none;
+        &:focus .form__fieldset{
             border-left: 2px solid $formBorderColor;
         }
     }
@@ -41,22 +42,23 @@
         resize: vertical;
         font-family: $josefinStack;
         font-size: 1.8rem;
-        border-top: none;
-        border-right: none;
-        border-left: 2px solid transparent;
-        border-bottom: 2px solid $formBorderColor;
+        border: none;
         &:focus{
             border-left: 2px solid $formBorderColor;
         }
     }
     &__checkbox{
+        position: absolute;
+        top: 0;
         background-color: transparent;
         border: 1px solid $checkBorderColor;
         cursor: pointer;
     }
     &__checkboxLegend{
+        display: block;
         font-size: 1.6rem;
         padding-bottom: 2.5rem;
+        padding-left: 2em;
         cursor: pointer;
     }
     &__submit{
@@ -64,6 +66,7 @@
         font-size: 2.4rem;
         font-family: $josefinStack;
         background-color: $submitBrg;
+        color: $pagebuttonColor;
         border: none;
         display: block;
         cursor:pointer;
@@ -71,4 +74,23 @@
             text-decoration: underline;
         }
     }
+}
+
+// Error managment (contact form 7 plugin)
+.screen-reader-response{
+    font-size: 1.8rem;
+    color: $formErrorColor;
+    & ul{
+        font-size: 0rem;
+    }
+}
+.wpcf7-validation-errors{
+    color: $formErrorColor;
+}
+.wpcf7-not-valid-tip{
+    position: relative;
+    left: 0.5em;
+    bottom: 0.2em;
+    font-size: 1.8rem;
+    color: $formErrorColor;
 }

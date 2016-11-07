@@ -4,3 +4,61 @@
 *
 * coded by Mucht!
 */
+
+.about{
+    width: 39.84375%;
+    margin: 5rem 0 0 8.59375%;
+}
+
+.findUs{
+    & p.address__line{
+        margin: 0;
+        margin-left: 1.4em;
+        &:first-of-type{
+            margin-left: 0;
+        }
+    }
+    & p.findUs__phone{
+        margin: 1em 0;
+    }
+    & a.findUs__mail{
+        margin-left: 0;
+    }
+}
+
+.contact{
+    width: 39.84375%;
+    margin: 5rem 8.59375% 0 0;
+}
+
+.antenne{
+    &__title{
+        margin-bottom: 2.5rem;
+    }
+}
+
+.map{
+    margin-top: 5rem;
+    &__link{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+// ===== media query =====
+@media screen and (max-width: 600px) {
+    .about{
+        margin: 5rem auto 0;
+    }
+    .contact{
+        margin: 2.5rem auto;
+        width: 65.625%;
+    }
+    .findUs{
+        & p{
+            width: auto;
+        }
+    }
+}

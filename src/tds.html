@@ -14,6 +14,8 @@
                 </div>
                 <nav class="mainNav">
                     <h2 class="mainNav__title hidden">Navigation principale</h2>
+                    <input class="mainNav__input" type="checkbox" id="toggle-nav">
+            		<label class="mainNav__label" for="toggle-nav"><span>Menu</span></label>
                     <ul class="mainNav__list">
                         <li class="mainNav__listElt mainNav__listElt--active"><a class="mainNav__listLink" href="/index.html">Accueil</a></li>
                         <li class="mainNav__listElt"><a class="mainNav__listLink" href="/contact.html">Contact</a></li>
@@ -25,14 +27,18 @@
                 </nav>
             </div>
         </header>
-        <nav class="secondNav">
+        <nav class="secondNav clear">
             <h2 class="secondNav__title hidden">Navigation secondaire</h2>
-            <ol class="secondNav__intern">
-                <li class="secondNav__Elt"><a class="secondNav__link" href="#secOne">Section une</a></li>
-                <li class="secondNav__Elt"><a class="secondNav__link" href="#secTwo">Section deux</a></li>
-                <li class="secondNav__Elt"><a class="secondNav__link" href="#infoSup">Infos supplémentaires</a></li>
-                <li class="secondNav__Elt"><a class="secondNav__link" href="#rendezVous">Prendre rendez-vous</a></li>
-            </ol>
+            <input class="secondNav__input" type="checkbox" id="toggle-secondNav">
+            <label class="secondNav__label" for="toggle-secondNav"><span>Menu interne</span></label>
+            <div class="secondNav__list">
+                <ol class="secondNav__intern">
+                    <li class="secondNav__Elt"><a class="secondNav__link" href="#secOne">Section une</a></li>
+                    <li class="secondNav__Elt"><a class="secondNav__link" href="#secTwo">Section deux</a></li>
+                    <li class="secondNav__Elt"><a class="secondNav__link" href="#infoSup">Infos supplémentaires</a></li>
+                    <li class="secondNav__Elt"><a class="secondNav__link" href="#rendezVous">Prendre rendez-vous</a></li>
+                </ol>
+            </div>
         </nav>
         <article>
             <h2 class="hidden">Contenu principal</h2>

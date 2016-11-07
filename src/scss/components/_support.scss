@@ -26,3 +26,13 @@
         background-color: $priceBrg;
     }
 }
+
+// ===== media query =====
+@media screen and (max-width: 760px) {
+    .details{
+        float: none;
+    }
+    .formSection{
+        float: none;
+    }
+}

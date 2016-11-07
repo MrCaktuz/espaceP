@@ -2,82 +2,107 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title" charset="utf-8">
-    <title>Soutenez-nous - Espace P...</title>
+    <meta name ="viewport" content="width=device-width,initial-scale1">
+    <meta name="author" content="Mucht - Mathieu Claessens">
+
+    <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title">
+
+    <title>Supportez-nous - Espace P&#8230;</title>
 </head>
-    <body>
-        <header class="header">
-            <div class="header__filter">
-                <div class="header__titleBloc clear">
-                    <a class="header__logoLink" href="/index.html"><img class="header__logo" src="./images/logo.svg" alt="Lien vers l'accueil" /></a>
-                    <h1 class="header__title">Soutenez-nous<p class="header__subTitle">Espace P... Vers une société "prostitution admise"</p></h1>
-                </div>
-                <nav class="mainNav">
-                    <h2 class="mainNav__title hidden">Navigation principale</h2>
-                    <ul class="mainNav__list">
-                        <li class="mainNav__listElt"><a class="mainNav__listLink" href="/index.html">Accueil</a></li>
-                        <li class="mainNav__listElt"><a class="mainNav__listLink" href="/contact.html">Contact</a></li>
-                        <li class="mainNav__listElt mainNav__listElt--active"><a class="mainNav__listLink" href="/support.html">Soutenez-nous</a></li>
-                        <li class="mainNav__listElt"><a class="mainNav__listLink" href="/rapport.html">Rapport d'activité</a></li>
-                        <li class="mainNav__listElt"><a class="mainNav__listLink" href="/partner.html">Partenaires</a></li>
-                        <li class="mainNav__listElt"><a class="mainNav__listLink" href="/manifest.html">Manifeste</a></li>
-                    </ul>
-                </nav>
+<body>
+    <header class="header">
+        <div class="header__filter">
+            <div class="header__titleBloc clear">
+                <a class="header__logoLink" href="/index.html"><img class="header__logo" src="http://espace-p.app/dev/wp-content/themes/mainTheme/images/logo.svg" alt="Lien vers l'accueil" /></a>
+                <h1 class="header__title">Supportez-nous<p class="header__subTitle">Espace P&#8230; &#8211; Vers une société &quot;prostitution admise&quot;</p></h1>
             </div>
-        </header>
-        <article class="content support clear">
-            <h2 class="content__title">Abonnement à notre magazine</h2>
-            <div class="clear">
-                <section class="content details">
-                    <h3 class="hidden">détailles</h3>
-                    <p class="support__intro">Les quatre prochains numéros d’Espace P... Magazine pour seulement <span class="support__price">20 &euro;</span></p>
-                    <p class="support__whatYouGet">Ce magazine contien Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </section>
-                <section class="content formSection">
-                    <h3 class="hidden">Formulaire d'abonnement</h3>
-                    <form class="form form--support" action="index.html" method="post">
-                        <fieldset class="form__fieldset">
-                            <label class="form__label" for="name">Nom</label>
-                            <input class="form__input" type="text" name="name" id="name" value="" placeholder="Votre nom ici">
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                            <label class="form__label" for="mail">E-mail</label>
-                            <input class="form__input" type="email" name="mail" id="mail" value="" placeholder="Votre e-mail ici">
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                            <label class="form__label form__label--textarea" for="message">Message</label>
-                            <textarea class="form__textarea" name="message" rows="5" cols="40" placeholder="Votre message ici"></textarea>
-                        </fieldset>
-                        <fieldset class="form__fieldset">
-                            <input class="form__checkbox" type="checkbox" name="name" value="" id="support">
-                            <label class="form__checkboxLegend" for="support">Soutenez-nous pour seulement 30€ supplémentaire. Pour 5 personnes qui nous soutiennes, une intervention de notre part est financé.</label>
-                        </fieldset>
-                        <button class="form__submit" type="submit" name="button">M'abonner</button>
-                    </form>
-                </section>
-            </div>
-        </article>
-        <footer class="footer clear">
-            <nav class="footer__nav clear">
-                <h2 class="hidden">Navigation de pied de page</h2>
-                <ul class="footer__list footer__col">
-                    <li class="footer__listElt"><a class="footer__listLink" href="/index.html">Accueil</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/contact.html">Contact</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/support.html">Soutenez-nous</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/rapport.html">Rapport d'activité</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/partner.html">Partenaires</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/manifest.html">Manifeste</a></li>
+            <nav class="mainNav">
+                <h2 class="mainNav__title hidden">Navigation principale</h2>
+                <input class="mainNav__input" type="checkbox" id="toggle-nav">
+                <label class="mainNav__label" for="toggle-nav"><span>Menu</span></label>
+                <ul class="mainNav__list">
+                    <li class="mainNav__listElt"><a class="mainNav__listLink" href="http://espace-p.app/dev/">Accueil</a></li>
+                    <li class="mainNav__listElt mainNav__listElt--active"><a class="mainNav__listLink" href="http://espace-p.app/dev/?page_id=25">Supportez-nous</a></li>
+                    <li class="mainNav__listElt"><a class="mainNav__listLink" href="http://espace-p.app/dev/?page_id=23">Contact</a></li>
+                    <li class="mainNav__listElt"><a class="mainNav__listLink" href="http://espace-p.app/dev/?page_id=27">Rapport d'activité</a></li>
+                    <li class="mainNav__listElt"><a class="mainNav__listLink" href="http://espace-p.app/dev/?page_id=31">Manifeste</a></li>
+                    <li class="mainNav__listElt"><a class="mainNav__listLink" href="http://espace-p.app/dev/?page_id=29">Partenaires</a></li>
                 </ul>
-                <ul class="footer__list footer__col">
-                    <li class="footer__listElt"><a class="footer__listLink" href="/tds.html">Je suis travailleur du sex</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/sw.html">I am sex worker</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/client.html">Je suis client</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/etudiant.html">Je suis étudiant</a></li>
-                    <li class="footer__listElt"><a class="footer__listLink" href="/curieux.html">Je suis curieux</a></li>
-                </ul>
-                <a class="footer__social footer__col social" href="#">Suivez-nous sur facebook</a>
             </nav>
-            <small class="footer__copy">&copy; espace P... 2016 - Site réalisé par <a class="footer__copyLink" href="http://mathieuclaessens.be">Mathieu Claessens</a></small>
-        </footer>
-    </body>
+        </div>
+    </header>
+    <article class="content support clear">
+        <h2 class="content__title">Abonnement à notre magazine</h2>
+        <div class="clear">
+            <section class="content details">
+                <h3 class="hidden">détailles</h3>
+                <p class="support__intro">Les quatre prochains numéros d’Espace P... Magazine pour seulement <span class="support__price">20€</span></p>
+                <p class="support__whatYouGet">Ce magazine contien Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+            <section class="content formSection">
+                <h3 class="hidden">Formulaire d'abonnement</h3>
+                                                            <div role="form" class="wpcf7" id="wpcf7-f139-p25-o1" lang="fr-BE" dir="ltr">
+<div class="screen-reader-response" role="alert">One or more fields have an error. Please check and try again.
+<ul>
+<li><a href="#name">The field is required.</a></li>
+<li><a href="#mail">The field is required.</a></li>
+<li><a href="#message">The field is required.</a></li>
+</ul>
+</div>
+<form action="/dev/?page_id=25#wpcf7-f139-p25-o1" method="post" class="wpcf7-form invalid form form--support" novalidate="novalidate">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="139" />
+<input type="hidden" name="_wpcf7_version" value="4.5.1" />
+<input type="hidden" name="_wpcf7_locale" value="fr_BE" />
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f139-p25-o1" />
+<input type="hidden" name="_wpnonce" value="46665ee724" />
+</div>
+<fieldset class="form__fieldset">
+    <label class="form__label" for="name">Nom</label><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid form__input" id="name" aria-required="true" aria-invalid="true" placeholder="Votre nom ici" /><span role="alert" class="wpcf7-not-valid-tip">The field is required.</span></span>
+</fieldset>
+<fieldset class="form__fieldset">
+    <label class="form__label" for="mail">E-mail</label><span class="wpcf7-form-control-wrap mail"><input type="email" name="mail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-not-valid form__input" id="mail" aria-required="true" aria-invalid="true" placeholder="Votre e-mail ici" /><span role="alert" class="wpcf7-not-valid-tip">The field is required.</span></span>
+</fieldset>
+<fieldset class="form__fieldset">
+    <label class="form__label form__label--textarea" for="msg">Message</label><span class="wpcf7-form-control-wrap message"><textarea name="message" cols="5" rows="3" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required wpcf7-not-valid form__textarea" id="message" aria-required="true" aria-invalid="true" placeholder="Votre message ici"></textarea><span role="alert" class="wpcf7-not-valid-tip">The field is required.</span></span>
+</fieldset>
+<fieldset class="form__fieldset form__fieldset--noBorder">
+    <span class="wpcf7-form-control-wrap checkbox"><input type="checkbox" name="checkbox" value="1" class="wpcf7-form-control wpcf7-acceptance form__checkbox" id="support" aria-invalid="false" /></span>
+    <label class="form__checkboxLegend" for="support">Soutenez-nous pour seulement 30€ supplémentaire. Pour 5 personnes qui nous soutiennes, une intervention de notre part est financé.</label>
+</fieldset>
+<fieldset class="form__fieldset form__fieldset--noBorder">
+<input type="submit" value="M&#039;abonner" class="wpcf7-form-control wpcf7-submit form__submit" />
+</fieldset><div class="wpcf7-response-output wpcf7-validation-errors" role="alert">One or more fields have an error. Please check and try again.</div></form></div>
+                                                </section>
+        </div>
+    </article>
+
+
+    <footer class="footer clear">
+        <nav class="footer__nav clear">
+            <h2 class="hidden">Navigation de pied de page</h2>
+            <ul class="footer__list footer__col">
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/">Accueil</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?page_id=25">Supportez-nous</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?page_id=23">Contact</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?page_id=27">Rapport d'activité</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?page_id=31">Manifeste</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?page_id=29">Partenaires</a></li>
+                            </ul>
+            <ul class="footer__list footer__col">
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?profiles=je-suis-curieux">Je suis curieux</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?profiles=je-suis-client">Je suis client</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?profiles=je-suis-etudiant">Je suis étudiant</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?profiles=i-am-a-sex-worker">I am a sex worker</a></li>
+                                    <li class="footer__listElt"><a class="footer__listLink" href="http://espace-p.app/dev/?profiles=je-suis-travailleur-du-sexe">Je suis travailleur du sexe</a></li>
+                            </ul>
+            <a class="footer__social footer__col social" href="https://www.facebook.com/espace.asbl?fref=ts">Suivez-nous sur facebook</a>
+        </nav>
+        <small class="footer__copy">&copy; espace P... 2016 - Site réalisé par <a class="footer__copyLink" href="http://mathieuclaessens.be">Mathieu Claessens</a></small>
+    </footer>
+</body>
 </html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+ Served from: espace-p.app @ 2016-10-26 11:34:43 by W3 Total Cache -->

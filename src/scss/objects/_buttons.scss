@@ -9,7 +9,7 @@
     margin: 5rem 5.46875%;
     &__img{
         width: 44.736842105%;
-        margin: 5rem 0 0 3.50877193%;
+        margin: 2.5rem 0 0 3.50877193%;
     }
 }
 
@@ -20,5 +20,21 @@
     &__img{
         width: 65.625%;
         margin: 0 auto 2.5rem auto;
+    }
+}
+
+// ===== media query =====
+@media screen and (max-width: 760px) {
+    .buttons{
+        &__img{
+            &--antenne{
+                width: 100%;
+                margin-left: 0;
+            }
+            &--partner{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     }
 }

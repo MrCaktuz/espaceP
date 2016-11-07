@@ -1,12 +1,11 @@
-dev
 build
 node_modules
 
 FTP-files
 
-wp/*
-!wp/wp-content/
-wp/wp-content/*
-!wp/wp-content/themes/
-wp/wp-content/themes/*
-!wp/wp-content/themes/mainTheme/
+dev/*
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/mainTheme/

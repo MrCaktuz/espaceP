@@ -6,7 +6,6 @@
  */
 .header{
     &__filter{
-        min-height: 32rem;
     }
     &__textBloc{
         width: 100%;
@@ -16,5 +15,15 @@
     }
     &__nav{
         width: 100%;
+    }
+}
+
+// ===== media query =====
+@media screen and (max-width: 900px) {
+    .header{
+        &__logo{
+            width: 150px;
+            margin-top: 1rem;
+        }
     }
 }

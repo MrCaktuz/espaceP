@@ -14,6 +14,8 @@
                 </div>
                 <nav class="mainNav">
                     <h2 class="mainNav__title hidden">Navigation principale</h2>
+                    <input class="mainNav__input" type="checkbox" id="toggle-nav">
+            		<label class="mainNav__label" for="toggle-nav"><span>Menu</span></label>
                     <ul class="mainNav__list">
                         <li class="mainNav__listElt"><a class="mainNav__listLink" href="/index.html">Accueil</a></li>
                         <li class="mainNav__listElt"><a class="mainNav__listLink" href="/contact.html">Contact</a></li>
@@ -26,36 +28,6 @@
             </div>
         </header>
         <div class="antenne clear">
-            <section class="about content">
-                <h2 class="hidden">À propos de cette antenne</h2>
-                <section class="team">
-                    <h3 class="antenne__title">Notre équipe</h3>
-                    <ul class="team__list">
-                        <li class="team__member">Quentin Deltour <span class="team__function">responsable communication</span></li>
-                        <li class="team__member">Jean Neige <span class="team__function">responsable connaissance</span></li>
-                        <li class="team__member">Dean Winchester <span class="team__function">responsable radio</span></li>
-                        <li class="team__member">Penny <span class="team__function">responsable marketing</span></li>
-                    </ul>
-                </section>
-                <section class="schedule">
-                    <h3 class="antenne__title">Nos horaires</h3>
-                    <ol class="schedule__list">
-                        <li class="schedule__day">Lundi <span class="schedule__time">09h - 17h</span></li>
-                        <li class="schedule__day">Mardi <span class="schedule__time">09h - 17h</span></li>
-                        <li class="schedule__day">Mercredi <span class="schedule__time">09h - 17h</span></li>
-                        <li class="schedule__day">Jeudi <span class="schedule__time">09h - 17h</span></li>
-                        <li class="schedule__day">Vendredi <span class="schedule__time">09h - 17h</span></li>
-                        <li class="schedule__day">Samedi <span class="schedule__time">Fermé</span></li>
-                        <li class="schedule__day">Dimanche <span class="schedule__time">Fermé</span></li>
-                    </ol>
-                </section>
-                <section class="address" itemscope itemtype="https://schema.org/PostalAddress">
-                    <h3 class="antenne__title">Notre adresse</h3>
-                    <p class="address__line"><span itemprop="postOfficeBoxNumber">50</span>, <span itemprop="streetAddress">rue Souverain-Pont</span></p>
-                    <p class="address__line"><span itemprop="postalCode">4000</span> <span itemprop="addressLocality">Liège</span></p>
-                    <p class="address__line" itemprop="addressCountry">Belgique</p>
-                </section>
-            </section>
             <section class="contact content">
                 <h2 class="hidden">Formulaire de contact</h2>
                 <section class="contact__form">
@@ -81,9 +53,44 @@
                     </form>
                 </section>
             </section>
+            <section class="about content">
+                <h2 class="hidden">À propos de cette antenne</h2>
+                <section class="team">
+                    <h3 class="antenne__title">Notre équipe</h3>
+                    <ul class="team__list">
+                        <li class="team__member">Quentin Deltour <span class="team__function">responsable communication</span></li>
+                        <li class="team__member">Jean Neige <span class="team__function">responsable connaissance</span></li>
+                        <li class="team__member">Dean Winchester <span class="team__function">responsable radio</span></li>
+                        <li class="team__member">Penny <span class="team__function">responsable marketing</span></li>
+                    </ul>
+                </section>
+                <section class="schedule">
+                    <h3 class="antenne__title">Nos horaires</h3>
+                    <ol class="schedule__list">
+                        <li class="schedule__day">Lundi <span class="schedule__time">09h - 17h</span></li>
+                        <li class="schedule__day">Mardi <span class="schedule__time">09h - 17h</span></li>
+                        <li class="schedule__day">Mercredi <span class="schedule__time">09h - 17h</span></li>
+                        <li class="schedule__day">Jeudi <span class="schedule__time">09h - 17h</span></li>
+                        <li class="schedule__day">Vendredi <span class="schedule__time">09h - 17h</span></li>
+                        <li class="schedule__day">Samedi <span class="schedule__time">Fermé</span></li>
+                        <li class="schedule__day">Dimanche <span class="schedule__time">Fermé</span></li>
+                    </ol>
+                </section>
+                <section class="findUs">
+                    <h3 class="antenne__title">Nous trouver</h3>
+                    <div itemscope itemtype="https://schema.org/PostalAddress">
+                        <p class="address__line"><span itemprop="postOfficeBoxNumber">50</span>, <span itemprop="streetAddress">rue Souverain-Pont</span></p>
+                        <p class="address__line"><span itemprop="postalCode">4000</span> <span itemprop="addressLocality">Liège</span></p>
+                        <p class="address__line" itemprop="addressCountry">Belgique</p>
+                    </div>
+
+                    <p class="findUs__phone">04/221 05 09</p>
+                    <a class="findUs__mail" href="mailto::espacepliege@gmail.com">espacepliege@gmail.com</a>
+                </section>
+            </section>
         </div>
         <section class="map">
-            <a class="map__link" href="https://www.google.be/maps/place/Rue+Souverain+Pont+50,+4000+Li%C3%A8ge/@50.6431799,5.5753487,14.67z/data=!4m5!3m4!1s0x47c0fa0eea904019:0xbf91a142d6e5adad!8m2!3d50.6434524!4d5.5756218?hl=fr"><img src="./images/antenneLiege.jpg" alt="lien vers le google map" width="1280" heigh="300" /></a>
+            <a class="map__link" href="https://www.google.be/maps/place/Rue+Souverain+Pont+50,+4000+Li%C3%A8ge/@50.6431799,5.5753487,14.67z/data=!4m5!3m4!1s0x47c0fa0eea904019:0xbf91a142d6e5adad!8m2!3d50.6434524!4d5.5756218?hl=fr"><img src="./images/liege.jpg" alt="lien vers le google map" width="2880" heigh="675"/></a>
         </section>
         <footer class="footer clear">
             <nav class="footer__nav clear">

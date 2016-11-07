@@ -5,31 +5,37 @@
  * coded by Mucht
  */
 
+// Colors
+$mainColor: rgb( 124, 50, 71 );
+$secondColor: rgb( 67, 113, 121 );
+
 // Text Color
-$textColor: rgb(124, 50, 71);
+$textColor: $mainColor;
 $titleColor: #FFF;
 $navColor: #000;
+$secondNavColor: #FFF;
 $pagebuttonColor: #FFF;
 $socialColor: #FFF;
-$secondNavColor: #000;
 $priceColor: #FFF;
 $functionColor: #000;
 $memberColor: $textColor;
+$formErrorColor: #FF0000;
 
 // background color
 $navBrg: rgba(255, 255, 255, 0.9);
+$burgerNavBrg: rgba(255, 255, 255, 1);
 $filterColor: rgba(124, 50, 71, 0.75);
-$filterColorHover: rgba(78, 133, 143, 0.75);
-$titleBcg: rgb(124, 50, 71);
-$socialBcg: rgb(124, 50, 71);
-$secondNavBcg: rgb(78, 133, 143);
-$submitBrg: rgb(78, 133, 143);
-$priceBrg: rgb(124, 50, 71);
+$filterColorHover: rgba(67, 113, 121, 0.75);
+$titleBcg: $mainColor;
+$socialBcg: $mainColor;
+$secondNavBcg: $secondColor;
+$submitBrg: $secondColor;
+$priceBrg: $mainColor;
 
 // other color
-$borderColor: rgb(124, 50, 71);
-$footerLine: rgb(78, 133, 143);
-$underlineColor: rgb(78, 133, 143);
+$borderColor: $mainColor;
+$footerLine: $secondColor;
+$underlineColor: $secondColor;
 $secondNavBorder: #000;
-$formBorderColor: rgb(78, 133, 143);
-$checkBorderColor: rgb(124, 50, 71);
+$formBorderColor: $secondColor;
+$checkBorderColor: $mainColor;

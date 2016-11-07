@@ -34,9 +34,8 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    // height: 15rem;
     font-size: 4rem;
-    padding: 5.5rem 5rem;
+    padding: 1.375em 1.25em;
     color: $pagebuttonColor;
     background-color: $filterColor;
     transition: 0.1s ease-in-out;
@@ -58,7 +57,22 @@
             background-image: url( #{ $imgPath }info.jpg );
         }
     }
-    &__link{
+}
 
+// ===== media query =====
+@media screen and (max-width: 760px) {
+    .pageButton{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pageButton{
+        font-size: 2rem;
+    }
+    .buttons{
+        &__link{
+            font-size: 3rem;
+        }
     }
 }
