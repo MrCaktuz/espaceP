@@ -26,7 +26,7 @@
     }
 }
 
-.social{
+.social, .download__link{
     display: block;
     text-align: center;
     padding: 1em;
@@ -35,7 +35,8 @@
     color: $socialColor;
     background-color: $socialBcg;
     &::before{
-        content: "    ";
+        content: "";
+        padding-right: 0.5em;
         font-size: 2.4rem;
         font-family: $glyphs;
     }

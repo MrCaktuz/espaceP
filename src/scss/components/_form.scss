@@ -9,7 +9,6 @@
     font-size: 2rem;
     &__fieldset{
         position: relative;
-        border-bottom: 2px solid $formBorderColor;
         &--noBorder{
             border: none;
         }
@@ -18,6 +17,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 1;
         padding: 0.6em 0 0 0.5em;
         display: inline-block;
         &--textarea{
@@ -30,28 +30,36 @@
         font-family: $josefinStack;
         padding: 0.6em 1em 0.4em 8rem;
         font-size: 1.8rem;
-        border: none;
-        &:focus .form__fieldset{
-            border-left: 2px solid $formBorderColor;
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid $formBorderColor;
+        &--support{
+            padding-left: 16rem;
+        }
+        &:focus{
+            border: 2px solid $formBorderColor;
         }
     }
     &__textarea{
-        background-color: transparent;
-        padding: 3rem 1em 0.4em 0.6em;
+        padding: 0em 1em 0.4em 0.6em;
+        margin-top: 2.222222222em;
         display: block;
         resize: vertical;
         font-family: $josefinStack;
         font-size: 1.8rem;
         border: none;
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-bottom: 2px solid $formBorderColor;
         &:focus{
-            border-left: 2px solid $formBorderColor;
+            border: 2px solid $formBorderColor;
         }
     }
     &__checkbox{
         position: absolute;
         top: 0;
-        background-color: transparent;
-        border: 1px solid $checkBorderColor;
         cursor: pointer;
     }
     &__checkboxLegend{
@@ -87,10 +95,9 @@
 .wpcf7-validation-errors{
     color: $formErrorColor;
 }
-.wpcf7-not-valid-tip{
+.wpcf7-form-control-wrap .wpcf7-not-valid-tip{
     position: relative;
     left: 0.5em;
-    bottom: 0.2em;
     font-size: 1.8rem;
     color: $formErrorColor;
 }

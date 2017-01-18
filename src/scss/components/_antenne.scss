@@ -82,6 +82,15 @@
     }
 }
 
+.map{
+    &__link{
+        display: block;
+        min-height: 300px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
 // ===== media query =====
 @media screen and (max-width: 600px) {
     .antenne{
@@ -96,5 +105,13 @@
     }
     .findUs, .schedule, .team{
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .map{
+        &__link{
+            min-height: 200px;
+        }
     }
 }

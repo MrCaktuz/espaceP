@@ -8,7 +8,7 @@ get_header();
         <div class="header__filter">
             <div class="header__titleBloc clear">
                 <a class="header__logoLink" href="/index.php"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
-                <h1 class="header__title"><?php bloginfo( 'name' ); ?><p class="header__subTitle"><?php bloginfo( 'description' ); ?></p></h1>
+                <h1 class="header__title"><?php bloginfo( 'name' ); ?><span class="header__subTitle"><?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
                 <h2 class="mainNav__title hidden">Navigation principale</h2>

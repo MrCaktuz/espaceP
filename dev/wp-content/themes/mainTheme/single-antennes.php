@@ -9,7 +9,7 @@ get_header();
         <div class="header__filter">
             <div class="header__titleBloc clear">
                 <a class="header__logoLink" href="/index.html"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
-                <h1 class="header__title"><?php the_title(); ?><p class="header__subTitle"><?php bloginfo( 'description' ); ?></p></h1>
+                <h1 class="header__title"><?php the_title(); ?><span class="header__subTitle">Espace P... <?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
                 <h2 class="mainNav__title hidden">Navigation principale</h2>
@@ -58,7 +58,7 @@ get_header();
                     <li class="schedule__day">Dimanche <span class="schedule__time"><?php the_field( 'sunday' ); ?></span></li>
                 </ol>
             </section>
-            <section class="address findUs" itemscope itemtype="https://schema.org/PostalAddress">
+            <section class="address findUs">
                 <h3 class="antenne__title">Notre adresse</h3>
                 <div itemscope itemtype="https://schema.org/PostalAddress">
                     <p class="address__line"><span itemprop="postOfficeBoxNumber"><?php the_field( 'street_number' ); ?></span>, <span itemprop="streetAddress"><?php the_field( 'street_name' ); ?></span></p>
@@ -76,8 +76,8 @@ get_header();
             </section>
         </section>
     </div>
-    <section class="map">
-        <a class="map__link" href="<?php the_field( "google_map_link" ); ?>"><img src="<?php the_post_thumbnail_url(); ?>" alt="lien vers le google map" width="2880" heigh="675" /></a>
-    </section>
+    <div class="map">
+        <a class="map__link" href="<?php the_field( "google_map_link" ); ?>" style="background-image: url( <?php the_post_thumbnail_url(); ?> );"></a>
+    </div>
 
 <?php get_footer();

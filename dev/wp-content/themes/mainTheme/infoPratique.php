@@ -9,7 +9,7 @@ get_header();
         <div class="header__filter">
             <div class="header__titleBloc clear">
                 <a class="header__logoLink" href="/index.html"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
-                <h1 class="header__title"><?php the_title(); ?><p class="header__subTitle"><?php bloginfo( 'description' ); ?></p></h1>
+                <h1 class="header__title"><?php the_title(); ?><span class="header__subTitle">Espace P... <?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
                 <h2 class="mainNav__title hidden">Navigation principale</h2>
@@ -35,7 +35,7 @@ get_header();
                 <?php endwhile; endif; ?>
             </ol>
             <ol class="secondNav__extern">
-                <li class="secondNav__Elt"><a class="secondNav__link" href="#legislation">Législation</a></li>
+                <li class="secondNav__Elt"><a class="secondNav__link" href="http://mathieuclaessens.be/espace-p/?page_id=43">Législation</a></li>
             </ol>
         </div>
     </nav>

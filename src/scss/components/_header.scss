@@ -33,9 +33,11 @@
         color: $titleColor;
     }
     &__subTitle{
+        display: block;
         padding-top: 4rem;
         text-indent: -10rem;
         font-size: 2rem;
+        line-height: 1.5;
     }
     &__nav{
         position: fixed;

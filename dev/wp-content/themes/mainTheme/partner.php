@@ -9,7 +9,7 @@ get_header();
         <div class="header__filter">
             <div class="header__titleBloc clear">
                 <a class="header__logoLink" href="/index.html"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
-                <h1 class="header__title"><?php the_title(); ?><p class="header__subTitle"><?php bloginfo( 'description' ); ?></p></h1>
+                <h1 class="header__title"><?php the_title(); ?><span class="header__subTitle">Espace P... <?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
                 <h2 class="mainNav__title hidden">Navigation principale</h2>
@@ -17,14 +17,20 @@ get_header();
                 <label class="mainNav__label" for="toggle-nav"><span>Menu</span></label>
                 <ul class="mainNav__list">
                     <?php foreach ( ep_get_menu_items( 'main-nav' ) as $navItem ): ?>
-                        <li class="mainNav__listElt<?php echo $navItem -> isCurrent ? ' mainNav__listElt--active' : ''; ?>"><a class="mainNav__listLink" href="<?php echo $navItem -> url; ?>"><?php echo $navItem -> label ?></a></li>
+                        <li class="mainNav__listElt<?php echo $navItem -> isCurrent ? ' mainNav__listElt--active' : ''; ?>"><a class="mainNav__listLink" target="_blank" href="<?php echo $navItem -> url; ?>"><?php echo $navItem -> label ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="buttons">
-        <h2 class="buttons__title">Nos partenaires</h2>
+        <?php if (have_posts()) : ?>
+            <div class="buttons__intro">
+                <?php while (have_posts()) : the_post(); ?>
+                    <?php echo the_content(); ?>
+                <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
         <?php
             $posts = new WP_QUERY( [ 'post_type' => 'partners' ] );
             if ( $posts -> have_posts() ): while ( $posts -> have_posts() ): $posts -> the_post();

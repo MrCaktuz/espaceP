@@ -13,6 +13,7 @@
     &__list{
         text-align: center;
         background-color: $navBrg;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
     }
     &__listElt{
         display: inline-block;
@@ -113,14 +114,13 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
     .mainNav{
         display: inline;
         &__list{
             padding: 0;
             overflow: hidden;
             background-color: $burgerNavBrg;
-            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
         }
         &__listLink{
             padding: 1em 2.5rem;
@@ -158,7 +158,6 @@
         &__list{
             padding: 0;
             overflow: hidden;
-            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
         }
         &__intern{
             padding-top: 3.5rem;

@@ -16,9 +16,9 @@
 }
 
 .support{
-    & p.support__intro, & p.support__whatYouGet{
+    & p.support__intro, & div.support__whatYouGet p{
         width: 100%;
-        margin: 0;
+        margin: 0 0 1em 0;
     }
     &__price{
         margin: 2.5rem 0 5rem 0;

@@ -100,3 +100,17 @@ function ep_get_menu_items( $location ) {
   }
   return $navItems;
 }
+
+/*
+ *
+ * générate an id from section title
+ *
+*/
+function ep_get_id_from_title( $title ){
+
+    $titleUpperCase = ucwords( $title );
+    $titleNoSpace = str_replace(" ", "", $titleUpperCase);
+    $titleID = lcfirst($titleNoSpace);
+
+    return $titleID;
+}
