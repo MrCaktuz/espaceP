@@ -18,18 +18,23 @@
     &__listElt{
         display: inline-block;
         font-size: 2rem;
+        transition: 0.1s ease-in-out;
         &--active{
-            text-decoration: underline;
+            background-color: $navEltBrg;
+            a {
+                color: $navHoverColor;
+            }
         }
     }
     &__listLink{
         display: block;
-        padding: 2.5rem;
+        padding: 1.5rem 2.5rem;
         color: $navColor;
         text-decoration: none;
         transition: 0.1s ease-in-out;
         &:hover{
-            text-decoration: underline;
+            background: linear-gradient(45deg, rgba(77,0,0,1) 0%, rgba(124,50,71,1) 50%, rgba(77,0,0,1) 100%);
+            color: $navHoverColor;
         }
     }
     &__label{
@@ -56,10 +61,9 @@
     z-index: 1000;
     display: inline-block;
     float: right;
-    position: fixed;
     position: sticky;
     top: 70px;
-    right: 0;
+    right: 10%;
     &__list{
         background-color: $secondNavBcg;
         padding: 0 1em;

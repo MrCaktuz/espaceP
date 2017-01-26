@@ -10,32 +10,40 @@
 }
 
 .team{
+    float: left;
+    margin-right: 10rem;
     &__list{
         font-size: 1.8rem;
         padding-bottom: 5rem;
     }
     &__member{
         padding: 0.5em;
+        padding-left: 0;
         color: $memberColor;
     }
     &__function{
         font-size: 1.6rem;
         display: block;
-        padding: 0.2em 0 0 1em;
+        padding: 0.2em 0 0 0;
         color: $functionColor;
     }
 }
 
 .schedule{
+    float: left;
     &__list{
+        max-width: 25rem;
+        min-width: 15rem;
         font-size: 1.8rem;
         padding-bottom: 5rem;
     }
     &__day{
         padding: 0.5em;
+        padding-left: 0;
         color: $memberColor;
     }
     &__time{
+        float: right;
         font-size: 1.6rem;
         padding: 0.2em 0 0 1em;
         color: $functionColor;
@@ -43,6 +51,7 @@
 }
 
 .findUs{
+    clear: left;
     & p.address__line{
         &:first-of-type{
             &::before{
@@ -78,6 +87,7 @@
 
 .antenne{
     &__title{
+        color: $mainColor;
         font-size: 3rem;
     }
 }
@@ -100,7 +110,7 @@
         float: none;
         display: inline-block;
     }
-    .contact{
+    .contact, .team, .schedule{
         float: none;
     }
     .findUs, .schedule, .team{
@@ -109,6 +119,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .team{
+        margin-right: 0;
+    }
     .map{
         &__link{
             min-height: 200px;

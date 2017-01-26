@@ -26,6 +26,10 @@
     &__social{
         float: right;
         line-height: 1.5;
+        &::before{
+            font-size: 6rem;
+            bottom: -2rem;
+        }
     }
     &__copy{
         display: block;

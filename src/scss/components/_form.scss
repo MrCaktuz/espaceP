@@ -34,6 +34,7 @@
         border-right: 2px solid transparent;
         border-left: 2px solid transparent;
         border-bottom: 2px solid $formBorderColor;
+        outline: none;
         &--support{
             padding-left: 16rem;
         }
@@ -53,6 +54,7 @@
         border-right: 2px solid transparent;
         border-left: 2px solid transparent;
         border-bottom: 2px solid $formBorderColor;
+        outline: none;
         &:focus{
             border: 2px solid $formBorderColor;
         }
@@ -98,6 +100,7 @@
 .wpcf7-form-control-wrap .wpcf7-not-valid-tip{
     position: relative;
     left: 0.5em;
+    top: 0.5em;
     font-size: 1.8rem;
     color: $formErrorColor;
 }

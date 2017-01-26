@@ -16,7 +16,7 @@
 }
 
 .support{
-    & p.support__intro, & div.support__whatYouGet p{
+    & p.support__intro, & p.support__whatYouGet{
         width: 100%;
         margin: 0 0 1em 0;
     }

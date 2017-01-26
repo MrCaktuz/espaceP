@@ -18,20 +18,26 @@
         margin-bottom: 2.5rem;
     }
     &__img{
-        width: 65.625%;
-        margin: 0 auto 2.5rem auto;
+        width: 56.25%;
+        margin: 0 auto 2.5rem 8.59375%;
     }
 }
 
 // ===== media query =====
+@media screen and (max-width: 1000px) {
+    .buttons{
+        &__img{
+            &--partner{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
 @media screen and (max-width: 760px) {
     .buttons{
         &__img{
             &--antenne{
-                width: 100%;
-                margin-left: 0;
-            }
-            &--partner{
                 width: 100%;
                 margin-left: 0;
             }

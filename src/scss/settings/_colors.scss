@@ -10,32 +10,36 @@ $mainColor: rgb( 124, 50, 71 );
 $secondColor: rgb( 67, 113, 121 );
 
 // Text Color
-$textColor: $mainColor;
+$textColor: #1C1C1C;
 $titleColor: #FFF;
 $navColor: #000;
+$navHoverColor: #FFF;
 $secondNavColor: #FFF;
 $pagebuttonColor: #FFF;
 $socialColor: #FFF;
 $priceColor: #FFF;
 $functionColor: #000;
-$memberColor: $textColor;
+$memberColor: $mainColor;
 $formErrorColor: #FF0000;
 $downloadColor: #FFF;
 
 // background color
 $navBrg: rgba(255, 255, 255, 0.9);
+$navEltBrg: $mainColor;
 $burgerNavBrg: rgba(255, 255, 255, 1);
-$filterColor: rgba(124, 50, 71, 0.75);
-$filterColorHover: rgba(67, 113, 121, 0.75);
+$filterHeaderColor: rgba(124, 50, 71, 0.5);
+$filterColor: rgba(124, 50, 71, 0.25);
 $titleBcg: $mainColor;
 $socialBcg: $mainColor;
+$downloadBcg: $mainColor;
+$socialHoverBcg: rgba(124, 50, 71, 0.9);
 $secondNavBcg: $secondColor;
 $submitBrg: $secondColor;
 $priceBrg: $mainColor;
-$downloadBcg: $secondColor;
 
 // other color
 $borderColor: $mainColor;
+$socialBorderColor: #000;
 $footerLine: $secondColor;
 $underlineColor: $secondColor;
 $secondNavBorder: #000;
