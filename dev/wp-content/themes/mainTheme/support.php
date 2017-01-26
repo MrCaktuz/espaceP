@@ -7,7 +7,7 @@ get_header();
     <header class="header">
         <div class="header__filter">
             <div class="header__titleBloc clear">
-                <a class="header__logoLink" href="/index.html"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
+                <a class="header__logoLink" href="/espace-p"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
                 <h1 class="header__title"><?php the_title(); ?><span class="header__subTitle">Espace P... <?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
@@ -27,8 +27,9 @@ get_header();
         <div class="clear">
             <section class="content details">
                 <h3 class="hidden">détailles</h3>
-                <p class="support__intro"><?php echo the_field( 'intro' ); ?> <span class="support__price"><?php the_field( 'price' ); ?></span></p>
-                <p class="support__whatYouGet"><?php the_field( 'content' ); ?></p>
+                <p class="support__intro"><?php echo the_field( 'optionOne' ); ?> <span class="support__price"><?php the_field( 'priceOne' ); ?>€</span></p>
+                <p class="support__intro"><?php the_field( 'optionTwo' ); ?> <span class="support__price"><?php the_field( 'priceTwo' ); ?>€</span></p>
+                <p class="support__whatYouGet"><?php the_field( 'conclusion' ); ?></p>
             </section>
             <section class="content formSection">
                 <h3 class="hidden">Formulaire d'abonnement</h3>

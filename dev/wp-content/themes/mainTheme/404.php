@@ -4,7 +4,7 @@ get_header();
     <header class="header">
         <div class="header__filter">
             <div class="header__titleBloc clear">
-                <a class="header__logoLink" href="/index.html"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
+                <a class="header__logoLink" href="/espace-p"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
                 <h1 class="header__title">Erreur 404<span class="header__subTitle">La page à laquelle vous voulez accéder n'existe pas ou est en cours de creation.</span></h1>
             </div>
             <nav class="mainNav">

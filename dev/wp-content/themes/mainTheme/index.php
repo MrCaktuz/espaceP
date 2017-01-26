@@ -7,7 +7,7 @@ get_header();
     <header class="header">
         <div class="header__filter">
             <div class="header__titleBloc clear">
-                <a class="header__logoLink" href="/index.php"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
+                <a class="header__logoLink" href="/espace-p"><img class="header__logo" src="<?php echo get_template_directory_uri() . '/images/logo.svg'; ?>" alt="Lien vers l'accueil" /></a>
                 <h1 class="header__title"><?php bloginfo( 'name' ); ?><span class="header__subTitle"><?php bloginfo( 'description' ); ?></span></h1>
             </div>
             <nav class="mainNav">
@@ -25,7 +25,7 @@ get_header();
     <section class="profils">
         <h2 class="hidden">Profils</h2>
         <?php
-            $posts = new WP_QUERY( [ 'post_type' => 'profiles' ] );
+            $posts = new WP_QUERY( [ 'post_type' => 'profiles', 'order'   => 'ASC', ] );
             if ( $posts -> have_posts() ): while ( $posts -> have_posts() ): $posts -> the_post();
         ?>
             <div class="profils__img profils__img--tds pageButtonImg <?php the_field( 'css_class' ); ?>">
